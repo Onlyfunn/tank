@@ -7,17 +7,17 @@ let minutes = new Date().getMinutes();
 let secondes = new Date().getSeconds();
 dateSeconds = minutes * 60 + secondes;
 
-let audioBubbles = new Audio("../img/bubbles.mp3");
+let audioBubbles = new Audio("img/bubbles.mp3");
 audioBubbles.loop = true;
 
-let audionBack = new Audio("../img/penisromana.mp3");
+let audionBack = new Audio("img/penisromana.mp3");
 audionBack.loop = true;
-let audioBoom = new Audio("../img/vzryv.mp3");
-let audioSosed = new Audio("../img/sosed.mp3");
-let audioTree = new Audio("../img/tree.mp3");
-let audioTank = new Audio("../img/tank.mp3");
-let audioFire = new Audio("../img/fire.mp3");
-let audioDead = new Audio("../img/dead.mp3");
+let audioBoom = new Audio("img/vzryv.mp3");
+let audioSosed = new Audio("img/sosed.mp3");
+let audioTree = new Audio("img/tree.mp3");
+let audioTank = new Audio("img/tank.mp3");
+let audioFire = new Audio("img/fire.mp3");
+let audioDead = new Audio("img/dead.mp3");
 
 let windowHeight = document.documentElement.clientHeight;
 let windowWidth = document.documentElement.clientWidth;
@@ -211,7 +211,7 @@ function goFire(e) {
             "sepia(100%) saturate(600%) hue-rotate(-50deg)";
           setTimeout(() => (boss.children[0].style.filter = `none`), 2000);
         }
-        let audioDamage = new Audio("../img/damage.mp3");
+        let audioDamage = new Audio("img/damage.mp3");
         audioDamage.play();
         let damage = document.createElement("div");
         boss.append(damage);
